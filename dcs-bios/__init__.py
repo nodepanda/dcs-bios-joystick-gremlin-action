@@ -41,7 +41,7 @@ class DCSBIOSFunctor(AbstractFunctor):
         super().__init__(action)
         self.commands = action.commands
         self.ip = "127.0.0.1"
-        self.port = 7778  # Standard DCS-BIOS UDP port is usually 7778, but using your requested 1111 below
+        self.port = 7778
 
     def process_event(self, event, value):
         #try:
